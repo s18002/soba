@@ -13,12 +13,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //1.画面遷移用ボタンの取得。
-        val btnIntent = findViewById<Button>(R.id.btn_intent)
+        val btnIntent = findViewById<Button>(R.id.yonabaru_intent)
         //2.画面遷移用ボタンにリスナを登録。
         btnIntent.setOnClickListener (object : View.OnClickListener {
             override fun onClick(v: View?) {
                 //3.Intentクラスのオブジェクトを生成。
                 val intent = Intent(this@MainActivity, Yonabaru::class.java)
+                //生成したオブジェクトを引数に画面を起動！
+                startActivity(intent)
+            }
+        })
+        //1.画面遷移用ボタンの取得。
+        val btn2Intent = findViewById<Button>(R.id.itoman_intent)
+        //2.画面遷移用ボタンにリスナを登録。
+        btn2Intent.setOnClickListener (object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                //3.Intentクラスのオブジェクトを生成。
+                val intent = Intent(this@MainActivity, itoman::class.java)
                 //生成したオブジェクトを引数に画面を起動！
                 startActivity(intent)
             }

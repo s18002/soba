@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".YonabaruStore"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCPWqHuL35fi6AM3e0ohW11vFuWgOI2kP8"/>
+        <activity android:name=".mingei" />
+        <activity android:name=".ebisusoba" />
+        <activity android:name=".YonabaruStore" />
         <activity android:name=".Yonabaru" />
         <activity android:name=".Tomigusuku" />
         <activity android:name=".Yaese" />
