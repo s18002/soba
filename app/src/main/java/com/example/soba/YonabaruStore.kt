@@ -1,10 +1,7 @@
 package com.example.soba
 
-import android.R
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentTransaction
-import com.google.android.gms.maps.MapFragment
 
 
 class YonabaruStore : AppCompatActivity() {
